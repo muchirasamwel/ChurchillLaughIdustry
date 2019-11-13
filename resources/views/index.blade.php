@@ -97,7 +97,7 @@
          </div>
          
         <div class="rounded text-dark p-2 withshadow homdata w-100" id="mydataholder" style="display: none;">
-        	<div class="col m-3  py-1 d-flex justify-content-center bg-white">
+        	<div class="col m-3  py-1 d-flex justify-content-center semitrans">
                <span class="mx-2"> Search Event</span> 
                <span class="mr-4">
 	                <input type="text" class="form-control" id="SearchText">
