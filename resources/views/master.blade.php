@@ -1,7 +1,5 @@
 
 <?php 
-    
-    
     try {
         session_start();
         $user_type="";

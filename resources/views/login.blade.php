@@ -160,7 +160,7 @@ session_destroy();
                 url:u_url,
                 data:data,
                 success:function(response){
-                    console.log(response);
+                    //console.log(response);
                     if (response.indexOf("success")!=-1) {
                        	c_alert('success',"Account created successfully Please check your email to verify your account");
                        	data={message:"Thank you for creating an acount here is your verificationcode "+rand,to:$("[name='email']").val(),subject:"Use this Verification code"}
@@ -171,12 +171,12 @@ session_destroy();
 	                        type:'POST',
 	                        url:"Notification/sendNotification.php",
 	                        success:function(response){
-	                           console.log(response);
+	                           //console.log(response);
 	                            if(response.indexOf("success")>=0){
 	                                alert("Email has been sent to your mail");
 	                            }
 	                            else {
-	                                console.log(response)
+	                                //console.log(response)
 	                                add="";
 	                                if(response.indexOf("Connection failed")>=0)
 	                                    add="due to Connection Error";

@@ -214,7 +214,7 @@
                 url:u_url,
                 data:data,
                 success:function(response){
-                    console.log(response);
+                    //console.log(response);
                     if (response.indexOf("successful")>0) {
                         if(submitAction=="add"){
                             c_alert('success','Event registered successfully');
@@ -409,12 +409,12 @@
                                             type:'POST',
                                             url:"Notification/sendNotification.php",
                                             success:function(response){
-                                               console.log(response);
+                                               //console.log(response);
                                                 if(response.indexOf("success")>=0){
                                                     alert("Email has been sent to your mail");
                                                 }
                                                 else {
-                                                    console.log(response)
+                                                    //console.log(response)
                                                     add="";
                                                     if(response.indexOf("Connection failed")>=0)
                                                         add="due to Connection Error";

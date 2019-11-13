@@ -163,7 +163,7 @@
             url:u_url,
             data:data,
             success:function(response){
-               console.log(response);
+               //console.log(response);
                 if (response.indexOf("successful")>0) {
                     c_alert('success','Account info updated successfully');
                     window.location.replace('profile')
@@ -218,7 +218,7 @@
       //  alert("name1 = "+imagename);
        imagename=imagename.substr(imagename.lastIndexOf('\\')+1);
        // alert("name2 = "+imagename);
-        console.log(formData);
+        //console.log(formData);
         $.ajax({
             async:false,
             type:'post',

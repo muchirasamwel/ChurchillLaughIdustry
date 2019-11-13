@@ -15,8 +15,6 @@ function mailthis($to,$subject,$message)
 		$mail->setFrom('samkan.sk1.sm@gmail.com',"Samkan");
 		$mail->addAddress($to);
 		//$mail->addAddress('254714730819@txt.att.net');
-
-
 		$mail->Subject = $subject;
 		$mail->Body = $message;
 		//send the message, check for errors
@@ -35,7 +33,7 @@ function mailthis($to,$subject,$message)
 	{
 		echo mailthis("samkan.sk1.sm@gmail.com","testing","Well i have the message then");
 		//$retval = mail ('muchirasamwe@gmail.com',"PHPMailer","testing");
-		//echo "error: no email specified";
+		//echo "$retval";
 	}
 	
  ?>

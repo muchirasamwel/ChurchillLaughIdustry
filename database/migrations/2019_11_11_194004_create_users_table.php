@@ -20,6 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('username')->unique();
             $table->string('password',800);
             $table->string('phone')->default('0');
+            $table->string('user_type')->default('user');
             $table->string('email');
             $table->string('verificationcode');
             $table->string('status')->default('Waiting');
