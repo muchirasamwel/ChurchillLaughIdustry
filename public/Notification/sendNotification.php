@@ -5,10 +5,10 @@ function mailthis($to,$subject,$message)
 		$mail = new PHPMailer;
 		$mail->isSMTP();
 		$mail->SMTPKeepAlive = true;
-		$mail->SMTPSecure = 'tls';
+		$mail->SMTPSecure = 'ssl';
 		$mail->SMTPAuth = true;
 		$mail->Host = 'smtp.gmail.com';
-		$mail->Port = 587;
+		$mail->Port = 465;
 		$mail->SMTPDebug = 4;
 		$mail->Username = 'samkan.sk1.sm@gmail.com';
 		$mail->Password = '33151912';
