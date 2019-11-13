@@ -73,7 +73,7 @@
                 <!-- Brand -->
                 <div class="navbar-brand m-0" >
                     <div class="logo row m-0 p-0">
-                            <a href="index.html" class="nav-link text-white "><div>
+                            <a href="home" class="nav-link text-white "><div>
                                  <img src="../assets/images/logo.png" alt="img" class=" image  pt-3 pl-2" id="logo" style=" width: 100px" />
                             </div>
                         </a>
