@@ -32,7 +32,7 @@ session_destroy();
                
                 <div class="row px-4">
                     <button class="btn btn-primary  col m-3 adder"> LOGIN </button>
-                    <label class="btn btn-outline-info  col m-3" onclick="toggler()"> Need account? </label>
+                    <label class="btn btn-outline-info  col m-3 mytoggle" > Need account? </label>
                 </div>
             </form>
         </div>
@@ -78,7 +78,7 @@ session_destroy();
                
                 <div class="row px-4">
                     <button class="btn btn-primary  col m-3"> Create Account</button>
-                    <label class="btn btn-outline-info col m-3" onclick="toggler()">Back To login</label>
+                    <label class="btn btn-outline-info col m-3 mytoggle" >Back To login</label>
                 </div>
             </form>
             
@@ -94,6 +94,9 @@ session_destroy();
      clcked=false;
     $("#contentviewbtn").click(function () {
         $("#login_form").trigger('reset');
+        toggler();
+    });
+    $(".mytoggle").click(function(){
         toggler();
     });
     function toggler()
