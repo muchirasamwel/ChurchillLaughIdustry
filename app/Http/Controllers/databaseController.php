@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use DB;
 use App\Http\Requests;
 use App\Http\Controllers\Controller; 
-use Illuminate\Support\facades\Crypt;
+use Crypt;
 use Mail;
 session_start();
 //This class is a hybrid class with my own made code and a few tricks of laravel eloquent model
