@@ -118,7 +118,7 @@
                     @yield('content')
             <div class="w-100 bg-light d-flex justify-content-center  text-dark font-weight-bold">
                 <div class="">
-                    <p >Copyright © <span class="year">2019</span> . All rights reserved.(Smb)
+                    <p >Copyright © <span class="year">2019</span> . All rights reserved.(Smb) Samwel Muchira Benard
                 </div>
                 
             </div>
