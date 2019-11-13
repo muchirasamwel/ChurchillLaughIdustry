@@ -18,6 +18,9 @@ Route::get('myevents', function () {
 });
 
 Route::post('/incrticket','databaseController@incrticket');
+Route::get('/', function () {
+    return view('home');
+});
 Route::get('home', function () {
     return view('home');
 });
