@@ -19,10 +19,10 @@ Route::get('myevents', function () {
 
 Route::post('/incrticket','databaseController@incrticket');
 Route::get('/', function () {
-    return view('home');
+    return view('index');
 });
 Route::get('home', function () {
-    return view('home');
+    return view('index');
 });
 Route::get('profile', function () {
     return view('profile');
