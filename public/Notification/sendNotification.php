@@ -6,10 +6,11 @@ function mailthis($to,$subject,$message)
 		$mail->isSMTP();
 		$mail->SMTPKeepAlive = true;
 		$mail->SMTPSecure = 'tls';
+		$mailer->AuthType='LOGIN';
 		$mail->SMTPAuth = true;
 		$mail->Host = 'smtp.gmail.com';
 		$mail->Port = 25;
-		$mail->SMTPDebug = 4;
+		$mail->SMTPDebug = 2;
 		$mail->Username = 'samkan.sk1.sm@gmail.com';
 		$mail->Password = '33151912';
 		$mail->setFrom('samkan.sk1.sm@gmail.com',"Samkan");
