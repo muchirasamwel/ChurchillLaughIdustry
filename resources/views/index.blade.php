@@ -409,7 +409,7 @@
                                             type:'POST',
                                             url:"Notification/sendNotification.php",
                                             success:function(response){
-                                               //console.log(response);
+                                               console.log(response);
                                                 if(response.indexOf("success")>=0){
                                                     alert("Email has been sent to your mail");
                                                 }
