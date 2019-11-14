@@ -4,9 +4,8 @@ function mailthis($to,$subject,$message)
 		require 'PHPMailer-5.2-stable/PHPMailerAutoload.php';
 		$mail = new PHPMailer;
 		$mail->isSMTP();
-		//$mail->SMTPKeepAlive = true;
+		$mail->SMTPAuth = TRUE;
 		$mail->SMTPSecure = 'tls';
-		$mailer->AuthType='LOGIN';
 		$mail->SMTPAuth = true;
 		$mail->Host = 'smtp.gmail.com';
 		$mail->Port = 587;
