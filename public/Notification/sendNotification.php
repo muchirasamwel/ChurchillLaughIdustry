@@ -8,7 +8,7 @@ function mailthis($to,$subject,$message)
 		$mail->SMTPSecure = 'tls';
 		$mail->SMTPAuth = true;
 		$mail->Host = 'smtp.gmail.com';
-		$mail->Port = 587;
+		$mail->Port = 25;
 		$mail->SMTPDebug = 4;
 		$mail->Username = 'samkan.sk1.sm@gmail.com';
 		$mail->Password = '33151912';
