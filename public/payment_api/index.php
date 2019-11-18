@@ -6,11 +6,14 @@
 
 	//init mpesa
 	$mpesa=new Mpesa();
-	echo $mpesa->accessToken;
+	//echo "<br>regUrl<br>".$mpesa->accessToken." <br>";
 	$resp=$mpesa->regUrl();
-	echo $resp;
+	echo "registering url <br>";
+	echo $resp."<br>";
+	echo "<br>simulation<br>";
 	$resp=$mpesa->simulateTrans(100);
 	echo $resp;
+ ?>
  ?>
  <!DOCTYPE html>
  <html lang="en">
