@@ -69,7 +69,7 @@ class Mpesa{
 
 	public function simulateTrans($amount){
 		$url = 'https://sandbox.safaricom.co.ke/mpesa/c2b/v1/simulate';
-		$url = 'https://api.safaricom.co.ke/mpesa/c2b/v1/simulate';
+		//$url = 'https://api.safaricom.co.ke/mpesa/c2b/v1/simulate';
 		$curl = curl_init($url);
 		curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json','Authorization:Bearer '.$this->accessToken));
 
