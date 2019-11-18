@@ -12,11 +12,11 @@ class Mpesa{
 		$this->msisdn=254708374149;
 
 		//enter domain name and path to the folder payment_api
-		$myDomain="www.churchilllaughindustry.herokuapp.com";
+		$myDomain="https://churchilllaughindustry.herokuapp.com";
 
 		$this->confirmationUrl=$myDomain."/payment_api/confirmation_main.php'";
-		//$this->validationUrl=$myDomain."/payment_api/validation_main.php";
-		$this->validationUrl="https://churchilllaughindustry.herokuapp.com/payment_api/validation_main.php";
+		$this->validationUrl=$myDomain."/payment_api/validation_main.php";
+		//$this->validationUrl="https://churchilllaughindustry.herokuapp.com/payment_api/validation_main.php";
 
 		$this->accessToken=$this->getAccessToken();
 	}
