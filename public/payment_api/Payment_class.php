@@ -15,7 +15,8 @@ class Mpesa{
 		$myDomain="www.churchilllaughindustry.herokuapp.com";
 
 		$this->confirmationUrl=$myDomain."/payment_api/confirmation_main.php'";
-		$this->validationUrl=$myDomain."/payment_api/validation_main.php";
+		//$this->validationUrl=$myDomain."/payment_api/validation_main.php";
+		$this->validationUrl="https://churchilllaughindustry.herokuapp.com/payment_api/validation_main.php";
 
 		$this->accessToken=$this->getAccessToken();
 	}
