@@ -5,10 +5,10 @@ class Mpesa{
 		$this->consKey="yyGTRIEcoYSWGGoHIgZgjhN8242a28G3";
 		$this->consSecret="rwZxDhRPsAmlq8HX";
 		$this->headers=['Content-Type:application/json; charset=utf8'];
-		$this->shortCode1=000000;
-		$this->onlineLipaNaMpesaBusinessShortCode=00000;
+		$this->shortCode1=99023;
+		$this->onlineLipaNaMpesaBusinessShortCode=99023;
 		$this->initiatorName="samwel";
-		$this->securityCredential="";
+		$this->securityCredential="Xj33943g";
 		$this->msisdn=254708374149;
 
 		//enter domain name and path to the folder payment_api
