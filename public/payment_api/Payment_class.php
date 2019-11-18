@@ -5,8 +5,8 @@ class Mpesa{
 		$this->consKey="yyGTRIEcoYSWGGoHIgZgjhN8242a28G3";
 		$this->consSecret="rwZxDhRPsAmlq8HX";
 		$this->headers=['Content-Type:application/json; charset=utf8'];
-		$this->shortCode1=99023;
-		$this->onlineLipaNaMpesaBusinessShortCode=99023;
+		$this->shortCode1=2;
+		$this->onlineLipaNaMpesaBusinessShortCode=174379;
 		$this->initiatorName="samwel";
 		$this->securityCredential="Xj33943g";
 		$this->msisdn=254708374149;
