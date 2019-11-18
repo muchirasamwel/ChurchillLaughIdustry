@@ -21,7 +21,8 @@ class Mpesa{
 	}
 
 	private function getAccessToken(){
-		$url="https://api.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials";
+		$url="https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials";
+		//$url="https://api.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials";
 		$curl = curl_init($url);
 
 		curl_setopt($curl, CURLOPT_HTTPHEADER, $this->headers);
@@ -39,7 +40,8 @@ class Mpesa{
 
 	public function regUrl(){
 		//make sure not to use test urls when using a live shortcode
-		$url="https://api.safaricom.co.ke/mpesa/c2b/v1/registerurl";
+		$url="https://sandbox.safaricom.co.ke/mpesa/c2b/v1/registerurl";
+		//$url="https://api.safaricom.co.ke/mpesa/c2b/v1/registerurl";
 		$curl = curl_init($url);
 
 		curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json','Authorization:Bearer '.$this->accessToken));
@@ -66,6 +68,7 @@ class Mpesa{
 	}
 
 	public function simulateTrans($amount){
+		$url = 'https://sandbox.safaricom.co.ke/mpesa/c2b/v1/simulate';
 		$url = 'https://api.safaricom.co.ke/mpesa/c2b/v1/simulate';
 		$curl = curl_init($url);
 		curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json','Authorization:Bearer '.$this->accessToken));
