@@ -129,7 +129,7 @@ session_destroy();
                     		$(".vcode").hide();
                     		response=JSON.parse(response);
                     		data=response[0];
-                       		c_alert('success',"welcome to the system"+data.username);
+                       		c_alert('success',"welcome to the system "+data.username);
                        		window.location.href=('home');
                     	}
                     }

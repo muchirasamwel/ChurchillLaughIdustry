@@ -48,19 +48,19 @@
                     <div class="col-md">
                         <div class="form-group">
                             <label class="custom-label">Total Tickets(Regular)</label>
-                            <input type="text" name="totalticketsreg" value="" class="form-control" required pattern="^[0-9]{1,3}$"/>
+                            <input type="text" name="totalticketsreg" value="" class="form-control" required pattern="^[0-9]{2,3}$"/>
                         </div>
                         <div class="form-group">
                             <label class="custom-label">Total Tickets(VIP)</label>
-                            <input type="text" name="totalticketsvip" value="" class="form-control" required pattern="^[0-9]{1,3}$"/>
+                            <input type="text" name="totalticketsvip" value="" class="form-control" required pattern="^[0-9]{2,3}$"/>
                         </div>
                         <div class="form-group">
                             <label class="custom-label">Cost Per Ticket(Regular)</label>
-                            <input type="text" name="costperticketreg" value="" class="form-control" required pattern="^[0-9]{2,4}$"/>
+                            <input type="text" name="costperticketreg" value="" class="form-control" required pattern="^[0-9]{3,4}$"/>
                         </div>
                         <div class="form-group">
                             <label class="custom-label">Cost Per Ticket(VIP)</label>
-                            <input type="text" name="costperticketvip" value="" class="form-control" required pattern="^[0-9]{2,4}$"/>
+                            <input type="text" name="costperticketvip" value="" class="form-control" required pattern="^[0-9]{3,4}$"/>
                         </div>
                     </div>
 
